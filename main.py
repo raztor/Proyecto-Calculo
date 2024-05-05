@@ -41,9 +41,6 @@ f = sympify(funcion)
 a = sympify(abajo)
 b = sympify(arriba)
 
-# Print the a and b values as decimals
-print("El limite inferior es: ", a.evalf())
-
 # Calculate the integral using Simpson's function and trapezoidal rule function
 integral_simpson = simpson_rule(f, a, b, cantidad)
 integral_trapezoidal = trapezoidal_rule(f, a, b, cantidad)
@@ -51,3 +48,20 @@ integral_trapezoidal = trapezoidal_rule(f, a, b, cantidad)
 # Print the results
 print("El resultado de la integral con la regla de Simpson es: ", integral_simpson.evalf())
 print("El resultado de la integral con la regla del trapecio es: ", integral_trapezoidal.evalf())
+
+# Error calculation
+
+# Trapezoidal rule error = E<=k*(b-a)^3/(12*n^2)
+# Simpson's rule error = E<=k*(b-a)^5/(180*n^4)
+
+# K is the maximum value of the second derivative for trapezoidal and fourth for Simpson's of the function
+# on the interval [a, b]
+
+k_simpson = f.diff(x,4)
+k_trapezoidal = f.diff(x,2)
+error_trapezoidal = (k_trapezoidal*(b - a) ** 3) / (12 * cantidad ** 2)
+error_simpson = (k_simpson*(b - a) ** 5) / (180 * cantidad ** 4)
+
+# Print the errors
+print("El error de la regla del trapecio es: ", error_trapezoidal.evalf())
+print("El error de la regla de Simpson es: ", error_simpson.evalf())
