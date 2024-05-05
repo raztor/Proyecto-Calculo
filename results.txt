@@ -1,0 +1,15 @@
+El resultado de la integral con la regla de Simpson es: 0.500000000000000
+El resultado de la integral con la regla del trapecio es: 0.750000000000000
+Aproximacion de pi con 2 intervalos: 3.13333333333333
+Aproximacion de pi con 4 intervalos: 3.14156862745098
+Aproximacion de pi con 6 intervalos: 3.14159178093604
+Aproximacion de pi con 8 intervalos: 3.14159250245871
+Aproximacion de pi con 10 intervalos: 3.14159261393922
+Aproximacion de pi con 12 intervalos: 3.14159264030538
+Aproximacion de pi con 14 intervalos: 3.14159264832065
+Aproximacion de pi con 16 intervalos: 3.14159265122482
+Aproximacion de pi con 18 intervalos: 3.14159265242317
+Aproximacion de pi con 20 intervalos: 3.14159265296979
+Aproximacion de pi con 100 intervalos: 3.14159265358975
+Aproximacion de pi con 1000 intervalos: 3.14159265358979
+Aproximacion de pi con 10000 intervalos: 3.14159265358979
